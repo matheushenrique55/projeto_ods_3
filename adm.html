@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VidaSaudável - Administração</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/adm.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container-logo">
+      <svg class="icone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="#0288d1">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      <span class="nome-marca">VidaSaudável</span>
+    </div>
+
+    <nav class="barra-navegacao">
+      <ul>
+        <li><a href="index.html#inicio">Início</a></li>
+        <li><a href="index.html#ods3">ODS 3</a></li>
+        <li><a href="index.html#pilares">Pilares da Saúde</a></li>
+        <li><a href="adm.html">Adm</a></li>
+        <li><a href="login.html" class="botao-login-nav">Entrar / Cadastrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container-adm">
+    <section class="painel-adm">
+      <h1>Cadastro de Usuários</h1>
+
+      <form id="form-cadastro-adm" class="formulario-adm">
+        <div class="grupo-campo">
+          <label for="nome-usuario">Nome do Usuário</label>
+          <input type="text" id="nome-usuario" name="nome-usuario" required>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="email-usuario">E-mail</label>
+          <input type="email" id="email-usuario" name="email-usuario" required>
+        </div>
+
+        <div class="grupo-botoes">
+          <button type="submit" class="botao-adm">Cadastrar</button>
+          <button type="button" id="botao-limpar" class="botao-adm botao-secundario">Limpar Campos</button>
+        </div>
+      </form>
+
+      <div class="controles-lista">
+        <div class="grupo-pesquisa">
+          <label for="campo-pesquisa">Pesquisar por Nome ou E-mail</label>
+          <input type="text" id="campo-pesquisa" placeholder="Digite para filtrar...">
+        </div>
+        <button type="button" id="botao-excluir-todos" class="botao-adm botao-perigo">Excluir Todos</button>
+      </div>
+
+      <ul id="lista-usuarios" class="lista-usuarios"></ul>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="conteudo-rodape">
+      <p>© 2026 VidaSaudável - Projeto Integrador UTFPR (ODS 3)</p>
+      
+      <svg class="icone-rodape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#ffffff">
+        <path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+      </svg>
+
+      <div class="links-equipe">
+        <span>Desenvolvido por</span>
+        <ul>
+          <li><a href="https://matheushenrique55.github.io/curriculo-matheus-furtado/" target="_blank" rel="noopener">Currículo Matheus Henrique Furtado</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/adm.js"></script>
+</body>
+</html>
