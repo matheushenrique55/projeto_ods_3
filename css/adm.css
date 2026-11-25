@@ -1,0 +1,141 @@
+.container-adm{
+  padding: 48px 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 75vh;
+}
+
+.painel-adm{
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.painel-adm h1{
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.formulario-adm{
+  margin-bottom: 32px;
+}
+
+.grupo-campo{
+  margin-bottom: 16px;
+}
+
+.grupo-campo label,
+.grupo-pesquisa label{
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.grupo-campo input,
+.grupo-pesquisa input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.grupo-botoes{
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.botao-adm{
+  padding: 10px 20px;
+  background-color: #0288d1;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-adm:hover{
+  background-color: #01579b;
+}
+
+.botao-secundario{
+  background-color: #607d8b;
+}
+
+.botao-secundario:hover{
+  background-color: #455a64;
+}
+
+.botao-perigo{
+  background-color: #c62828;
+}
+
+.botao-perigo:hover{
+  background-color: #8e0000;
+}
+
+.controles-lista{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 24px;
+}
+
+.grupo-pesquisa{
+  flex: 1;
+}
+
+.lista-usuarios{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-usuario{
+  background-color: #f4f8fb;
+  border-left: 4px solid #0288d1;
+  padding: 14px 16px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.dados-usuario{
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.botao-excluir-item{
+  padding: 6px 12px;
+  background-color: #c62828;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.botao-excluir-item:hover{
+  background-color: #8e0000;
+}
+
+@media (max-width: 600px){
+  .controles-lista,
+  .grupo-botoes,
+  .item-usuario{
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
